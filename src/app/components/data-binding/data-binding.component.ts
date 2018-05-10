@@ -7,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
+  interpolatedString: string = "Hey, there! I'm defined in the DataBindingComponent";
+  interpolatedNumber: number = 3;
+  interpolatedBoolean: boolean = true;
+
+  btnClass: string = 'btn btn-outline-primary';
+  btnText: string = "Submit";
+  btnClassDisabled: string = 'btn btn-outline-danger';
+  disabledText: string = "Disabled :(";
+  btnClassEnabled: string = 'btn btn-outline-success';
+  enabledText: string = "Enabled! :)"
+
+
+
   constructor() { }
 
   ngOnInit() {

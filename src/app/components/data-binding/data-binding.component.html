@@ -1,7 +1,35 @@
 <div class="container">
-  <p>
-    data-binding works!
-  </p>  
+  <h4 class="display-4">Data Binding</h4>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="border border-primary">
+        <h3>Interpolation</h3>
+        <ul>
+          <li>String interpolation inserts interpolated strings into the text within HTML Elements</li>
+          <li>String interpolation uses double curly brackets and NO QUOTES</li>
+          <li>{{ interpolatedString }}</li>
+          <li>{{ interpolatedNumber }}</li>
+          <li>{{ interpolatedBoolean }}</li>
+        </ul>  
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="border border-success">
+        <h3>Property Binding</h3>
+        <ul>
+          <li>Property binding sets an element's property to the value of a Template Expression</li>
+          <li>The binding target is enclosed in square brackets []</li>
+          <li>The binding source is enclosed in single quotes ''</li>
+          <div class="btn-group">
+            <input type="button" [class]='btnClass' [value]='btnText'>
+            <input type="button" [class]='btnClassDisabled' [value]='disabledText'>
+            <input type="button" [class]='btnClassEnabled' [value]='enabledText'>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
 
