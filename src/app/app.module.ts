@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { MyRoutes } from '../shared/app-routes'; 
 
@@ -16,7 +17,8 @@ import { DataBindingComponent } from '../app/components/data-binding/data-bindin
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(MyRoutes)
+    RouterModule.forRoot(MyRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

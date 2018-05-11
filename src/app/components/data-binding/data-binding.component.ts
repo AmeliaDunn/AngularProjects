@@ -18,11 +18,32 @@ export class DataBindingComponent implements OnInit {
   btnClassEnabled: string = 'btn btn-outline-success';
   enabledText: string = "Enabled! :)"
 
+  showButtonText: string = "Show the picture!";
+  isDisplayed: boolean = false;
+  imageWidth: number = 250;
 
+  listItemText:string = "";
+
+  username: string = "";
+  password: string = "";
+  email: string = "";
+  name: string = "";
 
   constructor() { }
 
   ngOnInit() {
   }
 
+
+  showPicture(): void {
+    this.isDisplayed = !this.isDisplayed;
+  }
+
+  showText(): void {
+    this.listItemText = "Event Binding => mind blown";
+  }
+
+  hideText(): void {
+    this.listItemText = "";
+  }
 }
