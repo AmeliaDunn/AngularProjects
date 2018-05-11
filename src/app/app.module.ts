@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { ExampleService } from './services/example-service/example.service';
+import { HttpExampleComponent } from './components/http-example/http-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    HttpExampleComponent
   ],
   imports: [
     BrowserModule,
