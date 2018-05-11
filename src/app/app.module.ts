@@ -6,8 +6,9 @@ import { FormsModule } from '@angular/forms';
 import { MyRoutes } from '../shared/app-routes'; 
 
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from '../app/components/welcome/welcome.component';
-import { DataBindingComponent } from '../app/components/data-binding/data-binding.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { DataBindingComponent } from './components/data-binding/data-binding.component';
+import { ExampleService } from './services/example-service/example.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { DataBindingComponent } from '../app/components/data-binding/data-bindin
     RouterModule.forRoot(MyRoutes),
     FormsModule
   ],
-  providers: [],
+  providers: [ExampleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
